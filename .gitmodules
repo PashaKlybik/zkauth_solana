@@ -1,0 +1,6 @@
+[submodule "nil_foundation/zkllvm"]
+	path = nil_foundation/zkllvm
+	url = https://github.com/NilFoundation/zkllvm.git
+[submodule "nil_foundation/evm-placeholder-verification"]
+	path = nil_foundation/evm-placeholder-verification
+	url = https://github.com/NilFoundation/evm-placeholder-verification.git

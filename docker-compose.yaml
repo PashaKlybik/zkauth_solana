@@ -1,0 +1,17 @@
+version: "3.6"
+
+services:
+  t_bot:
+    build:
+      dockerfile: ./t_bot/Dockerfile
+    restart: always
+    command: ./entrypoint.sh
+    env_file:
+      - ./t_bot/.env
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - 6379:6379
